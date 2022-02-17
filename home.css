@@ -1,0 +1,42 @@
+.main .home-section .main-content{
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: 1fr;
+} 
+.main .home-section .main-content .main-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .home-section .main-content .main-text-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+.main .home-section .main-content .main-text-container h1 span {
+    color: rgb(228, 109, 11);
+}
+.main .home-section .main-content .main-text-container p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 0;
+}
+.main .home-section .main-content .main-text-container button {
+    width: 200px;
+    height: 50px;
+    background: rgb(240, 144, 66);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    margin-top: 50px;
+}
+.main .home-section .main-content .main-image-container img{
+    height: 350px;
+    width: 350px;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 70px;
+}
