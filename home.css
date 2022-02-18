@@ -20,7 +20,7 @@
 .main .home-section .main-content .main-text-container p{
     font-size: 20px;
     font-weight: 100;
-    margin-top: 0;
+    margin-top: 5px;
 }
 .main .home-section .main-content .main-text-container button {
     width: 200px;
@@ -38,5 +38,5 @@
     display:flex;
     justify-content: center;
     align-items: end;
-    margin-top: 70px;
+    margin-top: 100px;
 }

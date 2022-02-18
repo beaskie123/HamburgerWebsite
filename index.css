@@ -1,4 +1,5 @@
 @import './home.css';
+@import './product.css';
 
 html , body {
     margin: 0;
@@ -26,8 +27,6 @@ a{
     height: 100vh;
     background-image: url(/img/bg2main.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: 120px 1fr;
 }
