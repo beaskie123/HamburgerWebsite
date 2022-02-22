@@ -2,15 +2,20 @@
     background-image: url('./img/bg2main.jpg');
     background-position: center;
     display: flex;
+    grid-row:4/5;
+    grid-template-columns: repeat(2, 1fr);
 }
 .main .contacts-section .image-container {
     display: grid;
     place-items: center;
+    margin: 0 100px;
 }
 .main .contacts-section .form-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 90vh;
+    margin: 10px 100px;
   }
   .main .contacts-section .form-container .form-wrapper {
     display: grid;
@@ -46,7 +51,7 @@
   }
   .main .contacts-section .form-container .form-wrapper textarea {
     padding-top: 20px;
-    resize: none;
+    resize: horizontal;
     grid-row: 4/5;
     grid-column: 1/3;
   }

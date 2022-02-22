@@ -3,6 +3,7 @@
     background-image: url(/img/bg2main.jpg);
     background-position: center;
     display: grid;
+    grid-row: 3/4;
     grid-template-rows: 150px 1fr;
 }
 

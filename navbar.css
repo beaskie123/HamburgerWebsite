@@ -1,0 +1,120 @@
+.main .Nav-bar {
+    background-image: url(./img/bg2main.jpg);
+    display: flex;
+    align-items: center;
+    }
+    .main .Nav-bar .logo-container img{
+        height: 50px;
+        width: 50px;
+        margin: 0 100px;
+    }
+    .main .Nav-bar .logo-container {
+        flex: 1;
+    }
+    .main .Nav-bar .menu-container {
+        display: flex;
+        align-items: center;
+    }
+    .main  .Nav-bar .menu-container li a{
+        font-size: 25px;
+        color: rgb(3, 3, 3);
+        margin: 0 10px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main  .Nav-bar .menu-container li a img {
+        height: 50px;
+        width: 50px;
+    }
+    .main .Nav-bar .menu-container li a::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: rgb(3, 3, 3) ;
+        transform: scale(0,1);
+        transition: transform 200ms ease-in;
+    }
+    .main .Nav-bar .menu-container li a:hover::after{
+        transform: scale(1,1)
+    }
+    .main .Nav-bar .menu-container li  span{
+        display: block;
+        width:  2px;
+        height: 50px;
+        background: rgb(3, 3, 3);
+    }
+    .main .Nav-bar .menu-container li:nth-child(5) a::after, 
+    .main .Nav-bar .menu-container li:nth-child(6) a::after{
+        all: unset;
+    }
+    .main .Nav-bar .menu-container li:nth-child(5) a ,
+    .main .Nav-bar .menu-container li:nth-child(6) a {
+        margin-right: 10px;
+    }
+    .main .Nav-bar .logo-container img{
+        height:100px;
+        width: 100px;
+    }
+    @media (max-width:1200px) {
+
+    }
+    @media (max-width:992px) {
+        .main .Nav-bar{
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            margin: 0;
+        }
+        .main .Nav-bar .logo-container{
+            margin-left: 100px;
+        }
+        .main .Nav-bar .hamburger-container {
+            margin-right: 100px;
+        }
+        .main .Nav-bar .hamburger-container:hover span{
+            background-color:  rgb(228, 109, 11) ;
+        }
+        .main .Nav-bar .hamburger-container span{
+            display: block;
+            height: 5px;
+            width: 50px;
+            background: rgb(65, 63, 63);
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        .main .Nav-bar .menu-container{
+            position: absolute;
+            top: 120px;
+            height: 200px;
+            width:100%;
+            display: grid;
+            transform: scale(1,0);
+            transform-origin: top;
+           
+        }
+        .main .Nav-bar .menu-container.show{
+            transform: scale(1,1);
+            transition: transform 500ms ease;
+        }
+        .main .Nav-bar .menu-container li:nth-child(4),
+        .main .Nav-bar .menu-container li:nth-child(5),
+        .main .Nav-bar .menu-container li:nth-child(6){
+            display: none;
+        }
+        .main .Nav-bar .menu-container li {
+            height: 100%;
+        }
+        .main .Nav-bar .menu-container li a {
+            height: 100%;
+            justify-content: center;
+        }
+
+        .main .Nav-bar .menu-container li:hover {
+        background: rgb(228, 109, 11);
+        }
+        .main .Nav-bar .menu-container li a::after{
+            all: unset;
+        }
+    }

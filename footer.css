@@ -1,6 +1,7 @@
 .main .footer-section {
     background-image: url('./img/bg2main.jpg');
     display: grid;
+    grid-row: 5/6;
     grid-auto-rows: 1fr;
   }
   .main .footer-section .content {
